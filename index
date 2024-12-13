@@ -24,6 +24,10 @@
         header p {
             margin: 5px 0 0;
         }
+        header a {
+            color: #fff;
+            text-decoration: none;
+        }
         nav {
             background: #333;
             color: #fff;
@@ -34,9 +38,14 @@
             color: #fff;
             margin: 0 15px;
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #004F90;
         }
         section {
             padding: 20px;
+            margin-bottom: 20px;
         }
         .section-title {
             color: #004F90;
@@ -55,8 +64,8 @@
     <header>
         <h1>Shivam Mantri</h1>
         <p>Nimbahera, Rajasthan, India</p>
-        <p>Email: <a href="mailto:itisshivammantri@gmail.com" style="color: #fff;">itisshivammantri@gmail.com</a> | Phone: +91-8003914338</p>
-        <p><a href="https://linkedin.com/in/shivammantri" style="color: #fff;">LinkedIn</a> | <a href="https://github.com/shivammantri479" style="color: #fff;">GitHub</a></p>
+        <p>Email: <a href="mailto:itisshivammantri@gmail.com">itisshivammantri@gmail.com</a> | Phone: +91-8003914338</p>
+        <p><a href="https://linkedin.com/in/shivammantri">LinkedIn</a> | <a href="https://github.com/shivammantri479">GitHub</a></p>
     </header>
     <nav>
         <a href="#objective">Objective</a>
