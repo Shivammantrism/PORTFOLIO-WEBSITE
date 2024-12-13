@@ -1,53 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>加载中</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Mantri - Portfolio</title>
     <style>
-        *{
-            margin:0;border:0;padding:0;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
         }
-        html{
-            height: 100%;
+        header {
+            background-color: #004F90;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
         }
-        body{
-            background:#282a36;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        header h1 {
+            margin: 0;
         }
-        .loading {
-             background: url("loading.png")
-             no-repeat;
-             width: 160px;
-             height: 160px;
-         }
-
+        header p {
+            margin: 5px 0 0;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .section-title {
+            color: #004F90;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-<div class="loading"></div>
-<script>
-    document.addEventListener( "DOMContentLoaded", function(){
-        var times = 0;
-        setInterval(() => {
-            if (times > 25) {
-                times = 0;
-            }
-            var x;
-            var y = 0;
-            x = times % 13;
-            if (times > 12) {
-                y = 1;
-            }
-            times++;
-            x = -x * 160;
-            y = -y * 160;
-            document.querySelector('.loading').style.backgroundPositionX = x+"px";
-            document.querySelector('.loading').style.backgroundPositionY = y+"px";
-        }, 60);
-    });
-</script>
+    <header>
+        <h1>Shivam Mantri</h1>
+        <p>Nimbahera, Rajasthan, India</p>
+        <p>Email: <a href="mailto:itisshivammantri@gmail.com" style="color: #fff;">itisshivammantri@gmail.com</a> | Phone: +91-8003914338</p>
+        <p><a href="https://linkedin.com/in/shivammantri" style="color: #fff;">LinkedIn</a> | <a href="https://github.com/shivammantri479" style="color: #fff;">GitHub</a></p>
+    </header>
+    <nav>
+        <a href="#objective">Objective</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#achievements">Achievements</a>
+    </nav>
+    <section id="objective">
+        <h2 class="section-title">Objective</h2>
+        <p>Dedicated engineering graduate with hands-on experience in electrical systems maintenance, troubleshooting, and compliance with safety standards. Seeking the role of Electrical Technician at Micron to leverage my technical skills and ensure the smooth operation of advanced systems.</p>
+    </section>
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <ul>
+            <li><strong>B.Tech in Electrical Engineering</strong>, Geetanjali Institute of Technical Studies (2021 - 2025) - GPA: 9.67/10</li>
+            <li><strong>Senior Secondary Education (12th)</strong>, Lala Kailashpat Singhania Public School (2020 - 2021) - Score: 93.6%</li>
+        </ul>
+    </section>
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <ul>
+            <li><strong>Technical Expertise:</strong> Electrical Maintenance, Troubleshooting, Equipment Repair</li>
+            <li><strong>Systems Knowledge:</strong> Chillers, Air Compressors, Gas and Water Systems, Fire Hydrants</li>
+            <li><strong>Tools & Technologies:</strong> PLC, SCADA, VFD, Control Wiring, AutoCAD, MATLAB</li>
+            <li><strong>Electrical Systems:</strong> HT/LT Transformers, Switchgear, ATS, Motors, Capacitor Banks</li>
+            <li><strong>Soft Skills:</strong> Collaboration, Communication, Problem-Solving</li>
+            <li><strong>Compliance:</strong> ISO Guidelines, Environmental Health and Safety Standards</li>
+        </ul>
+    </section>
+    <section id="experience">
+        <h2 class="section-title">Work Experience</h2>
+        <ul>
+            <li><strong>Trainee</strong>, JK Cement, Nimbahera (Jul 2024 - Aug 2024)<br>Conducted electrical system inspections and troubleshooting tasks, enhancing operational efficiency by 15%.</li>
+            <li><strong>Trainee</strong>, Comfort System Pvt. Ltd., New Delhi (Jul 2023 - Aug 2023)<br>Performed maintenance on air conditioning systems and industrial pumps, ensuring reliability and safety.</li>
+            <li><strong>Trainee</strong>, Vision Automation Systems, Udaipur (Mar 2023 - May 2023)<br>Gained expertise in motor control wiring and optimized energy management systems for industrial use.</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <ul>
+            <li><strong>Industrial Motor Control System</strong><br>Designed and implemented control wiring for motors, ensuring reliable operation in an industrial setup.</li>
+            <li><strong>Energy-Efficient Cooling System</strong><br>Optimized performance and energy consumption of air conditioning and chiller systems.</li>
+            <li><strong>IoT-Based Monitoring System</strong><br>Developed a system for real-time monitoring of electrical equipment, enabling predictive maintenance.</li>
+        </ul>
+    </section>
+    <section id="certifications">
+        <h2 class="section-title">Certifications</h2>
+        <ul>
+            <li>Electrical Systems Maintenance: Training in equipment repair and troubleshooting</li>
+            <li>MATLAB and SIMULINK: Proficient in modeling and simulations</li>
+            <li>PLC Programming: Experienced in industrial automation and control systems</li>
+            <li>PVsyst: Skilled in photovoltaic system design</li>
+        </ul>
+    </section>
+    <section id="achievements">
+        <h2 class="section-title">Achievements</h2>
+        <ul>
+            <li>Best Performer Award in Industrial Training for electrical system optimization</li>
+            <li>Global Rank 1111 in TCS CodeVita (2023)</li>
+            <li>Academic Excellence Award for consistent performance</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 Shivam Mantri. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
